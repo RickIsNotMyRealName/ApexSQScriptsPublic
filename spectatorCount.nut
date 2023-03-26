@@ -6,7 +6,7 @@ void function spectatorCount() {
 		float diff = angle1 - angle2;
 		if (diff > 180) {
 			diff -= 360;
-		} else if (diff <- 180) {
+		} else if (diff < -180) {
 			diff += 360;
 		};
 		//make diff positive
@@ -31,7 +31,7 @@ void function spectatorCount() {
 	if (IsValid(localview)) {
 		string announcement = "Spectator Count Started";
 		string subText = "Created By: KrahnB3rry";
-		AnnouncementMessage(localview, announcement, subText, titleColor, 0);
+		AnnouncementMessage(localview, announcement, subText, <0,255,0>, 0);
 	}
 
 	while (true) {
